@@ -1,0 +1,17 @@
+langchain
+langchain-openrouter
+langchain-community
+langchain-chroma
+langchain-openai
+langchain-text-splitters
+langchain-tavily
+google-genai
+chromadb
+python-dotenv
+deepeval[inspect]
+deepeval
+deepteam
+mcp<2
+langchain-mcp-adapters
+sentry-sdk
+typesafe-sdk
