@@ -11,3 +11,9 @@ wheels/
 
 # Secrets
 .env
+
+# Caches and databases
+.deepeval/
+.deepteam/
+chroma_db/
+.latest_*.json
