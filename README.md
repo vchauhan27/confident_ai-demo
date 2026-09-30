@@ -6,7 +6,7 @@ Welcome to the **Customer Support Agent** demonstration repository. This project
 
 ## 🎯 Overview
 
-The **Customer Support Agent** (formerly the Research Agent) is an autonomous, tool-calling assistant designed to answer user queries, manage support tickets, and maintain long-term context about customers. It utilizes a central OpenRouter LLM acting as the reasoning engine and orchestrates multiple advanced tools to resolve complex, multi-turn interactions.
+The **Customer Support Agent** is an autonomous, tool-calling assistant designed to answer user queries, manage support tickets, and maintain long-term context about customers. It utilizes a central OpenRouter LLM acting as the reasoning engine and orchestrates multiple advanced tools to resolve complex, multi-turn interactions.
 
 ## 🏗️ Architecture
 
@@ -25,7 +25,7 @@ graph TD
 
 ### Core Components
 
-1. **The Agent (`research-agent/agent.py`)**
+1. **The Agent (`customer-support-agent/agent.py`)**
    - The central reasoning engine utilizing a dual-layer guardrail system (`guardrail.py`) to prevent prompt injections and off-topic conversations.
    - Maintains conversational state and long-term memory via LangGraph.
 
@@ -37,7 +37,7 @@ graph TD
 
 ## 📁 Repository Structure
 
-* **`research-agent/`**: Contains the core LangChain/LangGraph application, guardrails, MCP server, and RAG ingestion scripts.
+* **`customer-support-agent/`**: Contains the core LangChain/LangGraph application, guardrails, MCP server, and RAG ingestion scripts.
 * **`Data-Generation/`**: Scripts utilizing DeepEval's `Synthesizer` and `ConversationSimulator` to generate synthetic single-turn and multi-turn evaluation datasets.
 * **`Evaluation/`**: A comprehensive DeepEval testing suite covering:
   * Trace-based agent metrics (Step Efficiency, Task Completion).
@@ -68,7 +68,7 @@ pip install -r requirements.txt
 
 1. Ingest the documents into the local Chroma vector database:
 ```bash
-cd research-agent
+cd customer-support-agent
 python ingest.py
 ```
 

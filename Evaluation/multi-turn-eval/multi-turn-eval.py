@@ -17,7 +17,7 @@ os.environ.setdefault("DEEPEVAL_PER_ATTEMPT_TIMEOUT_SECONDS_OVERRIDE", "2000")
 
 THIS_DIR = Path(__file__).resolve().parent
 ROOT_DIR = THIS_DIR.parent.parent          # repo root (where config.py lives)
-RESEARCH_AGENT_DIR = ROOT_DIR / "research-agent"
+RESEARCH_AGENT_DIR = ROOT_DIR / "customer-support-agent"
 
 sys.path.append(str(ROOT_DIR))
 sys.path.append(str(RESEARCH_AGENT_DIR))
@@ -69,7 +69,7 @@ def make_metric(metric_cls, **kwargs):
 # ---------------------------------------------------------------------------
 
 async def run_agent_turn(question: str, thread_id: str, user_id: str = "eval-user"):
-    """Invoke the research agent once and return its full message trace."""
+    """Invoke the customer support agent once and return its full message trace."""
     result = await agent_module.agent.ainvoke(
         {"messages": [{"role": "user", "content": question}]},
         config={"configurable": {"thread_id": thread_id}},
@@ -189,7 +189,7 @@ async def main():
     test_case = ConversationalTestCase(
         turns=turns,
         chatbot_role=(
-            "A research agent that answers questions using evidence from the "
+            "A customer support agent that answers questions using evidence from the "
             "internal knowledge base or the web. It does not role-play, "
             "make small talk, or claim to have personal experiences."
         ),

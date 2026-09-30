@@ -178,7 +178,7 @@ supported when intentional.
 │  │                       'output_tokens': 428, 'total_tokens': 1602, 'input_token_details': {'cache_read': 0,       │
 │  │                       'cache_creation': 0}, 'output_token_details': {'reasoning': 341}}),                        │
 │  │                       ToolMessage(content='\nSOURCE TYPE: INTERNAL KNOWLEDGE BASE\nDOCUMENT: 1\nSOURCE:          │
-│  │                       D:\\confident_ai-demo\\research-agent\\data\\example.txt\n\nCONTENT:\nQ: Can I request     │
+│  │                       D:\\confident_ai-demo\\customer-support-agent\\data\\example.txt\n\nCONTENT:\nQ: Can I request     │
 │  │                       my data to be deleted?\nA: Yes, under GDPR and CCPA regulations, you can request full      │
 │  │                       data deletion by emailing privacy@acmecorp.com. Your data will be permanently deleted      │
 │  │                       within 30 days.\n\nQ: Do you share my data with third parties?\nA: We only share           │
@@ -189,7 +189,7 @@ supported when intentional.
 │  │                       transfer ownership of my account?\nA: Only the current Owner can transfer ownership. Go    │
 │  │                       to Settings -> Team, click on the three dots next to an Admin\'s name, and select "Make    │
 │  │                       Owner".\n\n\nSOURCE TYPE: INTERNAL KNOWLEDGE BASE\nDOCUMENT: 2\nSOURCE:                    │
-│  │                       D:\\confident_ai-demo\\research-agent\\data\\example.txt\n\nCONTENT:\nQ: Is there a        │
+│  │                       D:\\confident_ai-demo\\customer-support-agent\\data\\example.txt\n\nCONTENT:\nQ: Is there a        │
 │  │                       limit to how many users I can add?\nA: Our Standard plan supports up to 10 users. Pro      │
 │  │                       supports up to 50 users, and Enterprise has unlimited user seats.\n\n##                    │
 │  │                       Integrations\nQ: Do you integrate with Slack or Microsoft Teams?\nA: Yes, both             │
@@ -199,7 +199,7 @@ supported when intentional.
 │  │                       coding.\n\nQ: Are Webhooks supported?\nA: Yes, Pro and Enterprise plans support custom     │
 │  │                       webhooks. You can configure endpoint URLs in the Developer Settings                        │
 │  │                       section.\n\n\nSOURCE TYPE: INTERNAL KNOWLEDGE BASE\nDOCUMENT: 3\nSOURCE:                   │
-│  │                       D:\\confident_ai-demo\\research-agent\\data\\example.txt\n\nCONTENT:\nQ: Is there an       │
+│  │                       D:\\confident_ai-demo\\customer-support-agent\\data\\example.txt\n\nCONTENT:\nQ: Is there an       │
 │  │                       API limit?\nA: Yes, our standard plan has a limit of 10,000 API requests per month. Pro    │
 │  │                       and Enterprise plans have higher limits. If you exceed your limit, you will receive a      │
 │  │                       429 Too Many Requests error.\n\n## General Information\nQ: What are your support           │
@@ -210,7 +210,7 @@ supported when intentional.
 │  │                       data secure?\nA: Yes. Acme Corp uses industry-standard 256-bit AES encryption for data     │
 │  │                       at rest and TLS 1.3 for data in transit. We are fully SOC 2 Type II and GDPR               │
 │  │                       compliant.\n\n\nSOURCE TYPE: INTERNAL KNOWLEDGE BASE\nDOCUMENT: 4\nSOURCE:                 │
-│  │                       D:\\confident_ai-demo\\research-agent\\data\\example.txt\n\nCONTENT:\nQ: Which payment     │
+│  │                       D:\\confident_ai-demo\\customer-support-agent\\data\\example.txt\n\nCONTENT:\nQ: Which payment     │
 │  │                       methods do you accept?\nA: We accept all major credit cards (Visa, MasterCard, American    │
 │  │                       Express) as well as PayPal and Apple Pay.\n\n## Technical Support\nQ: The application      │
 │  │                       won\'t load, what should I do?\nA: First, try clearing your browser cache and cookies.     │
@@ -219,7 +219,7 @@ supported when intentional.
 │  │                       ongoing outage.\n\nQ: How do I reset my password?\nA: Click the "Forgot Password" link     │
 │  │                       on the login page. You will receive an email with a secure link to reset your password.    │
 │  │                       The link expires in 2 hours.\n\n\nSOURCE TYPE: INTERNAL KNOWLEDGE BASE\nDOCUMENT:          │
-│  │                       5\nSOURCE: D:\\confident_ai-demo\\research-agent\\data\\example.txt\n\nCONTENT:\n# Acme    │
+│  │                       5\nSOURCE: D:\\confident_ai-demo\\customer-support-agent\\data\\example.txt\n\nCONTENT:\n# Acme    │
 │  │                       Corp Customer Support FAQ\n\n## Billing and Subscriptions\nQ: How do I cancel my           │
 │  │                       subscription?\nA: You can cancel your subscription by going to Account Settings ->         │
 │  │                       Billing -> Cancel Subscription. Your access will remain active until the end of the        │

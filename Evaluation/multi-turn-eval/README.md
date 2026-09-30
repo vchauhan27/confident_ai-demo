@@ -48,7 +48,7 @@ All 11 metrics run sequentially in a single script.
 ## Running
 
 ```bash
-python multi_turn_metrics.py
+python multi-turn-eval.py
 ```
 
 Prints a summary table at the end:

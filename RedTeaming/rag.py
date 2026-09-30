@@ -3,7 +3,7 @@ import os
 from typing import Optional
 from langchain_core.messages import HumanMessage, AIMessage, ToolMessage
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "research-agent")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "customer-support-agent")))
 import agent as research_agent # type: ignore
 from guardrail import check_input, check_output # type: ignore
 graph = research_agent.agent
@@ -108,7 +108,7 @@ if __name__ == "__main__":
         simulator_model=get_attacker_model(),
         evaluation_model=get_redteam_judge_model(),
         model_callback=model_callback,  # type: ignore
-        target_purpose="AI Research Agent with RAG that analyzes internal documentation and knowledge base.",
+        target_purpose="AI Customer Support Agent with RAG that analyzes internal documentation and knowledge base.",
         vulnerabilities=rag_vulnerabilities,
         attacks=[  # type: ignore
             PromptInjection(),

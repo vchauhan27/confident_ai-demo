@@ -39,7 +39,7 @@ def main():
     )
     
     # Path to the specific example.txt document
-    example_doc_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'research-agent', 'data', 'example.txt'))
+    example_doc_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'customer-support-agent', 'data', 'example.txt'))
     document_paths = [example_doc_path]
     
     print(f"Generating 2 synthetic test cases from {example_doc_path}...")

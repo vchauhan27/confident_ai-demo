@@ -3,7 +3,7 @@ import os
 from langchain_core.messages import HumanMessage, AIMessage
 from deepteam.test_case import RTTurn
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "research-agent")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "customer-support-agent")))
 import agent as research_agent # type: ignore
 from guardrail import check_input, check_output # type: ignore
 graph = research_agent.agent
@@ -76,7 +76,7 @@ if __name__ == "__main__":
         simulator_model=get_attacker_model(),
         evaluation_model=get_redteam_judge_model(),
         model_callback=model_callback,  # type: ignore
-        target_purpose="AI Research Agent that is responsible, safe, and accurate.",
+        target_purpose="AI Customer Support Agent that is responsible, safe, and accurate.",
         vulnerabilities=diagnostics_vulnerabilities,
         attacks=[PromptInjection(), Roleplay(), CrescendoJailbreaking()],
         attacks_per_vulnerability_type=1,

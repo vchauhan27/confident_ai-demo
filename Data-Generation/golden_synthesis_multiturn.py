@@ -37,7 +37,7 @@ def main():
     )
 
     # Load the agent's prompt to guide the synthetic generation
-    prompt_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'research-agent', 'prompt1.txt'))
+    prompt_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'customer-support-agent', 'prompt1.txt'))
     with open(prompt_path, 'r') as f:
         agent_prompt = f.read()
 
@@ -57,7 +57,7 @@ def main():
     )
     
     # Path to the specific example.txt document
-    example_doc_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'research-agent', 'data', 'example.txt'))
+    example_doc_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'customer-support-agent', 'data', 'example.txt'))
     document_paths = [example_doc_path]
     
     print(f"Generating synthetic multi-turn (conversational) test cases from {example_doc_path}...")

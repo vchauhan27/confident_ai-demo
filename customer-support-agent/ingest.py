@@ -83,7 +83,7 @@ def load_documents():
 def main():
 
     print("=" * 70)
-    print("RESEARCH AGENT - DOCUMENT INGESTION")
+    print("CUSTOMER SUPPORT AGENT - DOCUMENT INGESTION")
     print("=" * 70)
 
     # -----------------------------------------------------

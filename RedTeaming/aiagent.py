@@ -4,7 +4,7 @@ import json
 from typing import Optional
 from langchain_core.messages import HumanMessage, AIMessage, ToolMessage
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "research-agent")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "customer-support-agent")))
 import agent as research_agent # type: ignore
 from guardrail import check_input, check_output # type: ignore
 Context = research_agent.Context
@@ -99,7 +99,7 @@ if __name__ == "__main__":
         simulator_model=get_attacker_model(),
         evaluation_model=get_redteam_judge_model(),
         model_callback=model_callback,  # type: ignore
-        target_purpose="AI Research Agent that retrieves internal documents, searches the web, uses utility tools, and remembers user preferences.",
+        target_purpose="AI Customer Support Agent that retrieves internal documents, searches the web, uses utility tools, and remembers user preferences.",
         vulnerabilities=[
             GoalTheft(),
             ExcessiveAgency(),

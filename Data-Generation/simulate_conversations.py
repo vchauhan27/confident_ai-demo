@@ -6,7 +6,7 @@ import asyncio
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import config
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'research-agent')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'customer-support-agent')))
 from agent import agent, Context, init_agent  # type: ignore
 
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage

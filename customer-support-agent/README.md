@@ -1,4 +1,4 @@
-# Customer Support Agent (Formerly Research Agent)
+# Customer Support Agent
 
                                            USER
                                             │
@@ -31,7 +31,7 @@
                                              ▼
                                            ANSWER
 
-This directory contains an intelligent Agentic RAG implementation built using LangChain and LangGraph. Originally a "Research Agent", it has been refactored into a **Customer Support Agent** that answers user queries based on internal FAQs, checks external web services, manages support tickets, and maintains long-term memory about users.
+This directory contains an intelligent Agentic RAG implementation built using LangChain and LangGraph. It is a **Customer Support Agent** that answers user queries based on internal FAQs, checks external web services, manages support tickets, and maintains long-term memory about users.
 
 ## Architecture & Tools
 
@@ -53,6 +53,10 @@ Current mock tools provided by the MCP server include:
 The agent implements a dual-layer guardrail system in `guardrail.py` to ensure safe, on-topic interactions:
 1. **Deterministic Guardrails (O(1))**: A fast, regex-based pre-guard that intercepts prompt injections (e.g., "ignore previous instructions") and PII leakage (e.g., "credit card") in milliseconds.
 2. **LLM-as-a-Judge Guardrails**: If the fast check passes, a DeepEval `TopicalGuard` ensures the user is strictly asking about approved customer support topics (billing, bugs, data privacy, etc.) and blocks off-topic requests.
+
+## Planning & Execution
+
+The agent operates with a strict planning phase before taking any action. Based on its system prompt (`prompt1.txt`), it must explicitly state a complete, numbered, multi-step plan detailing which tools it will use and how it will analyze the retrieved information to resolve the request. The agent is instructed to strictly adhere to this plan and execute only the planned steps without deviating.
 
 ## Usage
 

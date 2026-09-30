@@ -112,7 +112,7 @@ What it tests: Checks if the agent accurately recalls a specific piece of inform
 llm-eval/GEval/conversational_GEval.py (Memory Consistency)
 
 What it tests: Uses an LLM-as-judge to verify that the agent's current response doesn't contradict facts established earlier in the conversation history.
-llm-eval/multi-turn-eval/multi_turn_metrics.py (All 11 DeepEval Conversational Metrics)
+llm-eval/multi-turn-eval/multi-turn-eval.py (All 11 DeepEval Conversational Metrics)
 
 What it tests: This is the big one. It runs 11 different conversational metrics on a full chat transcript, including Knowledge Retention, Conversation Completeness, Goal Accuracy (can the agent infer what the user actually wants over multiple turns), and Conversation Relevancy.
 llm-eval/MCP-Eval/mcp-eval.py (Multi-Turn MCP Use)
